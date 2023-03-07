@@ -2,7 +2,7 @@
 
 Submitted by: **Zachary Mull**
 
-**BeFit** is a health metrics app that allows users to track ... [TODO] 
+**BeFit** is a health metrics app that allows users to track calories
 
 Time spent: **2** hours spent in total
 
