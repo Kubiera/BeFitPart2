@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodSummaryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/maxText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Calories:"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/avgText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average Calories:"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maxText" />
+
+        <TextView
+            android:id="@+id/minText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min Calories:"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avgText" />
+
+        <TextView
+            android:id="@+id/maxValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="28sp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/maxText"
+            app:layout_constraintTop_toTopOf="@+id/maxText" />
+
+        <TextView
+            android:id="@+id/avgValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="28sp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/avgText"
+            app:layout_constraintTop_toTopOf="@+id/avgText" />
+
+        <TextView
+            android:id="@+id/minValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="28sp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/minText"
+            app:layout_constraintTop_toTopOf="@+id/minText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
